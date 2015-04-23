@@ -15,7 +15,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
 
 # ES6
-gem 'sprockets', '~>3.0.0.beta'
 gem 'sprockets-es6'
 
 # Bootstrap
