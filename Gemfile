@@ -14,8 +14,14 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Devise
 gem 'devise'
 
+# ES6
 gem 'sprockets', '~>3.0.0.beta'
 gem 'sprockets-es6'
+
+# Bootstrap
+gem 'therubyracer'
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
