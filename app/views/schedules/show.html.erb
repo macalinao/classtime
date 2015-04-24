@@ -6,7 +6,7 @@
         <h3><%= c.number %>.<%= c.section %> - <%= c.name %></h3>
         <p><%= c.credits %> credits</p>
         <% if c.start_time %>
-          <p><%= time c.start_time %> to <%= time c.end_time %></p>
+          <p><%= c.days %> <%= time c.start_time %> to <%= time c.end_time %></p>
         <% else %>
           <p>Online</p>
         <% end %>
