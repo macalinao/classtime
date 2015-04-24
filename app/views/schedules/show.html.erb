@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <% @schedule.courses.each do |c| %>
+        <h2><%= c.number %> - <%= c.name %></h2>
+      <% end %>
+    </div>
+  </div>
+</div>
