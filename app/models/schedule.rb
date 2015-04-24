@@ -46,14 +46,14 @@ class Schedule < ActiveRecord::Base
       elsif course.has_key?(:name) and not course.has_key?(:credits)
         course[:credits] = Float(line).to_i if /^[\d]+/ =~ line
 
-      elsif course.has_key?(:credits) and not course.has_key?(:start_time)
-        next unless /^[A-Za-z]{4} [\d]/ =~ line
+      elsif course.has_key?(:credits) and not course.has_key?(:start_time) and /^[A-Za-z]{4} [\d]/ =~ line
         split = line.split(' ')
         course[:days] = split[0]
         course[:start_time] = Time.parse split[1]
         course[:end_time] = Time.parse split[3]
 
-      elsif course.has_key?(:start_time) and not course.has_key?(:room)
+      elsif course.has_key?(:credits) and not course.has_key?(:room)
+        next unless /^[A-Z]{2}/ =~ line
         course[:room] = line
 
       elsif course.has_key?(:room) and not course.has_key?(:instructor)

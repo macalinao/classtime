@@ -5,7 +5,11 @@
       <% @schedule.courses.each do |c| %>
         <h3><%= c.number %> - <%= c.name %></h3>
         <p><%= c.credits %> credits</p>
-        <p><%= time c.start_time %> to <%= time c.end_time %></p>
+        <% if c.start_time %>
+          <p><%= time c.start_time %> to <%= time c.end_time %></p>
+        <% else %>
+          <p>Online</p>
+        <% end %>
         <p><%= c.room %></p>
         <p><%= c.instructor %></p>
       <% end %>
