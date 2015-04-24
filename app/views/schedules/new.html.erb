@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h1 class="page-header">Import Schedule</h1>
+      <p>Copy and paste your schedule below.</p>
+      <%= simple_form_for :create, url: schedules_path do |f| %>
+        <%= f.input :schedule, as: :text %>
+        <%= f.submit 'Import', class: 'btn btn-primary' %>
+      <% end %>
+    </div>
+  </div>
+</div>
