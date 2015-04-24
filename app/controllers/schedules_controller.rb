@@ -13,7 +13,7 @@ class SchedulesController < ApplicationController
       redirect_to schedule_path(schedule)
     rescue StandardError => e
       flash[:error] = 'Invalid data: ' + e.message + '\n' + e.backtrace[0..5].join('\n')
-      redirect_to new_schedules_path
+      redirect_to new_schedule_path
     end
   end
 

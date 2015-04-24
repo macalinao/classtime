@@ -1,6 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
+      <h1 class="page-header"><%= @schedule.semester.name %> Semester</h1>
       <% @schedule.courses.each do |c| %>
         <h2><%= c.number %> - <%= c.name %></h2>
       <% end %>

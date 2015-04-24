@@ -13,10 +13,22 @@ class Schedule < ActiveRecord::Base
     # Current course info
     course = nil
 
+    # Semester
+    semester = nil
+
     lines = str.split(/[\r]*\n/)
     lines.each do |line|
+
+      if /^[\d]{4}/ =~ line and course.nil?
+        split = line.split(' > ')
+        semester_name = split[0]
+        semester = Semester.where(name: semester_name).first || Semester.create({
+          name: semester_name,
+          school: School.where(name: split[2]).first || School.create(name: split[2])
+        })
+
       # Course name
-      if /^[A-Z]{2,4} [\d]{4}/ =~ line
+      elsif /^[A-Z]{2,4} [\d]{4}/ =~ line
 
         split = line.split(' - ')
         course = {
@@ -56,7 +68,7 @@ class Schedule < ActiveRecord::Base
       end
     end
 
-    schedule = Schedule.new
+    schedule = Schedule.new semester: semester
 
     # Add courses
     courses.each do |course|
