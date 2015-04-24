@@ -3,7 +3,11 @@
     <div class="col-md-12">
       <h1 class="page-header"><%= @schedule.semester.name %> Semester</h1>
       <% @schedule.courses.each do |c| %>
-        <h2><%= c.number %> - <%= c.name %></h2>
+        <h3><%= c.number %> - <%= c.name %></h3>
+        <p><%= c.credits %> credits</p>
+        <p><%= time c.start_time %> to <%= time c.end_time %></p>
+        <p><%= c.room %></p>
+        <p><%= c.instructor %></p>
       <% end %>
     </div>
   </div>
