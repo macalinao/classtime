@@ -10,6 +10,12 @@
 
 <%= render 'layouts/navbar' %>
 
+<% if flash[:error] %>
+  <div class="alert">
+    <p><%= flash[:error] %></p>
+  </div>
+<% end %>
+
 <%= yield %>
 
 </body>
