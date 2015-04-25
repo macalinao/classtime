@@ -4,6 +4,8 @@ class Schedule < ActiveRecord::Base
 
   has_and_belongs_to_many :courses
 
+  validates :semester, presence: true
+
   def self.import_from_string(str)
     schedule = Schedule.new
 
