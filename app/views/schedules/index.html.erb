@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="page-header">My Schedules</h1>
+
+      <% @schedules.each do |schedule| %>
+        <h2><%= link_to schedule.semester.name, schedule_path(schedule) %></h2>
+        <p><%= schedule.credits %> credits</p>
+      <% end %>
+
+      <% if @schedules.empty? %>
+        <p>You don't have any schedules. <%= link_to 'Import one!', new_schedule_path %></p>
+      <% end %>
+
+    </div>
+  </div>
+</div>

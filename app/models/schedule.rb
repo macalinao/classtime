@@ -5,8 +5,15 @@ class Schedule < ActiveRecord::Base
   has_and_belongs_to_many :courses
 
   validates :semester, presence: true
+  validates :user, presence: true
 
-  def self.import_from_string(str)
+  def credits
+    courses.reduce 0 do |sum, course|
+      sum + course.credits
+    end
+  end
+
+  def self.import_from_string(str, user)
     schedule = Schedule.new
 
     # Array to hold our courses
@@ -75,7 +82,7 @@ class Schedule < ActiveRecord::Base
       end
     end
 
-    schedule = Schedule.new semester: semester
+    schedule = Schedule.new semester: semester, user: user
 
     # Add courses
     courses.each do |course|
