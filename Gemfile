@@ -11,8 +11,10 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-# Devise
+# Auth
 gem 'devise'
+gem 'omniauth'
+gem 'omniauth-facebook'
 
 # ES6
 gem 'sprockets-es6'
@@ -33,5 +35,6 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'dotenv-rails'
 end
 
