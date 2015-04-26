@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150425073242) do
+ActiveRecord::Schema.define(version: 20150426180021) do
 
   create_table "Courses_Schedules", id: false, force: :cascade do |t|
     t.integer "schedule_id", null: false
@@ -79,6 +79,7 @@ ActiveRecord::Schema.define(version: 20150425073242) do
     t.string   "uid"
     t.string   "name"
     t.string   "image"
+    t.string   "token"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

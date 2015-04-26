@@ -3,6 +3,7 @@ class SchedulesController < ApplicationController
 
   def index
     @schedules = Schedule.where user: current_user
+    @friends = current_user.friends
   end
 
   def new

@@ -3,6 +3,8 @@
     <div class="col-md-12">
       <h1 class="page-header">My Schedules</h1>
 
+      <%= @friends.to_s %>
+
       <% @schedules.each do |schedule| %>
         <h2><%= link_to schedule.semester.name, schedule_path(schedule) %></h2>
         <p><%= schedule.credits %> credits</p>
