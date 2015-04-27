@@ -12,6 +12,7 @@
         <% end %>
         <p><%= c.room %></p>
         <p><%= c.instructor %></p>
+        <p><%= pluralize c.friends_enrolled(current_user).length, 'friend' %> enrolled</p>
       <% end %>
     </div>
   </div>
