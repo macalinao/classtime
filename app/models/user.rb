@@ -12,7 +12,9 @@ class User < ActiveRecord::Base
   end
 
   def friends
-    self.graph.get_connections('me', 'friends')
+    self.graph.get_connections('me', 'friends').map do |f|
+      User.where(uid: f['id']).first
+    end
   end
 
   def self.from_omniauth(auth)
