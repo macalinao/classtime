@@ -1,31 +1,51 @@
 <div class="container">
+
   <div class="row">
     <div class="col-md-12">
       <h1 class="page-header"><%= @schedule.semester.name %> Semester</h1>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="col-md-6">
       <% @schedule.courses.each do |c| %>
-        <h3><%= c.number %>.<%= c.section %> - <%= c.name %></h3>
+        <h3><%= c.number %>.<%= c.section %></h3>
+        <h4><%= c.name %></h4>
         <table class="table">
 
           <thead>
             <tr>
-              <th>Credits</th>
-              <th>Time</th>
-              <th>Room</th>
-              <th>Instructor</th>
-              <th>Friends</th>
             </tr>
           </thead>
 
           <tbody>
             <tr>
+              <th>Credits</th>
               <td><%= c.credits %> credits</td>
+            </tr>
+
+            <tr>
+              <th>Time</th>
               <% if c.start_time %>
                 <td><%= c.days %> <%= time c.start_time %> to <%= time c.end_time %></td>
               <% else %>
                 <td>Online</td>
               <% end %>
+            </tr>
+
+            <tr>
+              <th>Room</th>
               <td><%= c.room %></td>
+            </tr>
+
+            <tr>
+              <th>Instructor</th>
               <td><%= c.instructor %></td>
+            </tr>
+
+            <tr>
+              <th>Friends</th>
               <td><%= pluralize c.friends_enrolled(current_user).length, 'friend' %> enrolled</td>
             </tr>
           </tbody>
@@ -33,5 +53,22 @@
         </table>
       <% end %>
     </div>
+
+    <div class="col-md-6">
+      <h2>Schedule</h2>
+      <table class="table">
+        <% @schedule.agenda.each do |day, courses| %>
+          <tr>
+            <th><%= day %></th>
+            <td>
+              <% courses.each do |course| %>
+                <p><%= course.name %></p>
+              <% end %>
+            </td>
+          </tr>
+        <% end %>
+      </table>
+    </div>
+
   </div>
 </div>

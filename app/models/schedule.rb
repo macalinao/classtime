@@ -13,6 +13,17 @@ class Schedule < ActiveRecord::Base
     end
   end
 
+  # Creates a day-by-day agenda of a week.
+  def agenda
+    ret = {}
+    ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'].map do |day|
+      ret[day] = courses.select do |course|
+        course.days and course.days.include? day[0, 2]
+      end
+    end
+    return ret
+  end
+
   def self.import_from_string(str, user)
     schedule = Schedule.new
 
