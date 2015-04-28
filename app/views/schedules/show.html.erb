@@ -14,41 +14,34 @@
         <h4><%= c.name %></h4>
         <table class="table">
 
-          <thead>
-            <tr>
-            </tr>
-          </thead>
+          <tr>
+            <th>Credits</th>
+            <td><%= c.credits %> credits</td>
+          </tr>
 
-          <tbody>
-            <tr>
-              <th>Credits</th>
-              <td><%= c.credits %> credits</td>
-            </tr>
+          <tr>
+            <th>Time</th>
+            <% if c.start_time %>
+              <td><%= c.days %> <%= time c.start_time %> to <%= time c.end_time %></td>
+            <% else %>
+              <td>Online</td>
+            <% end %>
+          </tr>
 
-            <tr>
-              <th>Time</th>
-              <% if c.start_time %>
-                <td><%= c.days %> <%= time c.start_time %> to <%= time c.end_time %></td>
-              <% else %>
-                <td>Online</td>
-              <% end %>
-            </tr>
+          <tr>
+            <th>Room</th>
+            <td><%= c.room %></td>
+          </tr>
 
-            <tr>
-              <th>Room</th>
-              <td><%= c.room %></td>
-            </tr>
+          <tr>
+            <th>Instructor</th>
+            <td><%= c.instructor %></td>
+          </tr>
 
-            <tr>
-              <th>Instructor</th>
-              <td><%= c.instructor %></td>
-            </tr>
-
-            <tr>
-              <th>Friends</th>
-              <td><%= pluralize c.friends_enrolled(current_user).length, 'friend' %> enrolled</td>
-            </tr>
-          </tbody>
+          <tr>
+            <th>Friends</th>
+            <td><%= pluralize c.friends_enrolled(current_user).length, 'friend' %> enrolled</td>
+          </tr>
 
         </table>
       <% end %>
