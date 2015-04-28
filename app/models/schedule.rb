@@ -60,7 +60,7 @@ class Schedule < ActiveRecord::Base
         course[:section] = line
 
       # Time
-      elsif course.has_key?(:section) and not course.has_key?(:start_time) and /^[A-Za-z]{4} [\d]/ =~ line
+      elsif course.has_key?(:section) and not course.has_key?(:start_time) and /^[A-Za-z]+ [\d]/ =~ line
         split = line.split(' ')
         course[:days] = split[0]
         course[:start_time] = Time.parse(split[1] + ' UTC')
