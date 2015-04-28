@@ -4,15 +4,33 @@
       <h1 class="page-header"><%= @schedule.semester.name %> Semester</h1>
       <% @schedule.courses.each do |c| %>
         <h3><%= c.number %>.<%= c.section %> - <%= c.name %></h3>
-        <p><%= c.credits %> credits</p>
-        <% if c.start_time %>
-          <p><%= c.days %> <%= time c.start_time %> to <%= time c.end_time %></p>
-        <% else %>
-          <p>Online</p>
-        <% end %>
-        <p><%= c.room %></p>
-        <p><%= c.instructor %></p>
-        <p><%= pluralize c.friends_enrolled(current_user).length, 'friend' %> enrolled</p>
+        <table class="table">
+
+          <thead>
+            <tr>
+              <th>Credits</th>
+              <th>Time</th>
+              <th>Room</th>
+              <th>Instructor</th>
+              <th>Friends</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><%= c.credits %> credits</td>
+              <% if c.start_time %>
+                <td><%= c.days %> <%= time c.start_time %> to <%= time c.end_time %></td>
+              <% else %>
+                <td>Online</td>
+              <% end %>
+              <td><%= c.room %></td>
+              <td><%= c.instructor %></td>
+              <td><%= pluralize c.friends_enrolled(current_user).length, 'friend' %> enrolled</td>
+            </tr>
+          </tbody>
+
+        </table>
       <% end %>
     </div>
   </div>
