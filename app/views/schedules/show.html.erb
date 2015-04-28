@@ -40,7 +40,15 @@
 
           <tr>
             <th>Friends</th>
-            <td><%= pluralize c.friends_enrolled(current_user).length, 'friend' %> enrolled</td>
+            <td>
+              <% friends = c.friends_enrolled(current_user) %>
+              <p>
+                <%= pluralize c.friends_enrolled(current_user).length, 'friend' %> enrolled
+              </p>
+              <% friends.each do |friend| %>
+                <img src="<%= friend.image %>" />
+              <% end %>
+            </td>
           </tr>
 
         </table>
