@@ -20,6 +20,7 @@ class Schedule < ActiveRecord::Base
       ret[day] = courses.select do |course|
         course.days and course.days.include? day[0, 2]
       end
+      ret[day].reverse!
     end
     return ret
   end
