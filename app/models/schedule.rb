@@ -63,8 +63,8 @@ class Schedule < ActiveRecord::Base
       elsif course.has_key?(:section) and not course.has_key?(:start_time) and /^[A-Za-z]{4} [\d]/ =~ line
         split = line.split(' ')
         course[:days] = split[0]
-        course[:start_time] = Time.parse split[1]
-        course[:end_time] = Time.parse split[3]
+        course[:start_time] = Time.parse(split[1] + ' UTC')
+        course[:end_time] = Time.parse(split[3] + ' UTC')
 
       elsif course.has_key?(:credits) and not course.has_key?(:room)
         next unless /^[A-Z]{2}/ =~ line
