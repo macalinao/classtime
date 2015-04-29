@@ -5,4 +5,10 @@ class Course < ActiveRecord::Base
   def friends_enrolled(user)
     self.users & user.friends
   end
+
+  def room_link
+    return nil if self.room == 'TBA'
+    "https://www.utdallas.edu/locator/#{self.room.gsub(' ', '_')}"
+  end
+
 end

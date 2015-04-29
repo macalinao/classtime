@@ -30,7 +30,13 @@
 
           <tr>
             <th>Room</th>
-            <td><%= c.room %></td>
+            <td>
+              <% if c.room_link %>
+                <%= link_to c.room, c.room_link, target: '_blank' %>
+              <% else %>
+                <%= c.room %>
+              <% end %>
+            </td>
           </tr>
 
           <tr>
