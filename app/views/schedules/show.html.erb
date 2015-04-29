@@ -46,7 +46,7 @@
                 <%= pluralize c.friends_enrolled(current_user).length, 'friend' %> enrolled
               </p>
               <% friends.each do |friend| %>
-                <img src="<%= friend.image %>" />
+                <img src="<%= friend.image %>" data-toggle="tooltip" title="<%= friend.name %>" class="img-rounded" />
               <% end %>
             </td>
           </tr>
