@@ -16,6 +16,6 @@
 //= require turbolinks
 //= require_tree .
 
-$(function () {
+$(document).on('page:change', function () {
   $('[data-toggle="tooltip"]').tooltip();
 });
