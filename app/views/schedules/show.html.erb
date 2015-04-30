@@ -3,6 +3,8 @@
   <div class="row">
     <div class="col-md-12">
       <h1 class="page-header"><%= @schedule.user.name %>'s <%= @schedule.semester.name %> Semester</h1>
+      <%= link_to 'Delete', schedule_path, class: 'btn btn-danger',
+            method: 'delete', data: { confirm: 'Are you sure?' } %>
     </div>
   </div>
 
