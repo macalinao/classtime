@@ -17,6 +17,10 @@ class User < ActiveRecord::Base
     end
   end
 
+  def big_pic
+    self.graph.get_picture self.uid, width: 420
+  end
+
   def self.from_omniauth(auth)
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
       user.email = auth.info.email
