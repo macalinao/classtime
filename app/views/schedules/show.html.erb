@@ -54,7 +54,9 @@
                 <%= pluralize c.friends_enrolled(current_user).length, 'friend' %> enrolled
               </p>
               <% friends.each do |friend| %>
-                <img src="<%= friend.image %>" data-toggle="tooltip" title="<%= friend.name %>" class="img-rounded" />
+                <a href="<%= user_path(friend) %>">
+                  <img src="<%= friend.image %>" data-toggle="tooltip" title="<%= friend.name %>" class="img-rounded" />
+                </a>
               <% end %>
             </td>
           </tr>
