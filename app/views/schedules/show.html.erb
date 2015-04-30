@@ -76,6 +76,10 @@
                   <p>Online</p>
                 <% end %>
               <% end %>
+
+              <% unless courses.length > 0 %>
+                <p>No courses on <%= day %>.</p>
+              <% end %>
             </td>
           </tr>
         <% end %>
