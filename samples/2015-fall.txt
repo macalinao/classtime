@@ -1,0 +1,89 @@
+Ian Gilbert Macalinao
+2015 Fall > Undergraduate > University of Texas at Dallas
+CS 3305 - DISCRETE MATH FOR COMPUTING II
+Status  Units Grading Grade
+Enrolled
+3.00
+Graded - Undergraduate Courses
+
+Class Nbr Section Component Days & Times  Room  Instructor  Start/End Date
+81541
+001
+1 LEC
+TuTh 4:00PM - 5:15PM
+ECSS 2.305
+Linda Morales
+08/24/2015 - 12/09/2015
+CS 3341 - PROBABILITY & STATS IN CS/SE
+Status  Units Grading Grade
+Enrolled
+3.00
+Graded - Undergraduate Courses
+
+Class Nbr Section Component Days & Times  Room  Instructor  Start/End Date
+81981
+501
+1 LEC
+MoWe 5:30PM - 6:45PM
+GR 3.420
+Yulia Gel
+08/24/2015 - 12/09/2015
+CS 3354 - SOFTWARE ENGINEERING
+Status  Units Grading Grade
+Enrolled
+3.00
+Graded - Undergraduate Courses
+
+Class Nbr Section Component Days & Times  Room  Instructor  Start/End Date
+82034
+001
+1 LEC
+MoWe 1:00PM - 2:15PM
+ECSS 2.305
+Ebru Celikel Cankaya
+08/24/2015 - 12/09/2015
+CS 3376 - C C++ PROGRAM IN A UNIX ENVRNM
+Status  Units Grading Grade
+Enrolled
+3.00
+Graded - Undergraduate Courses
+
+Class Nbr Section Component Days & Times  Room  Instructor  Start/End Date
+82336
+0W1
+1 LEC
+
+TBA
+Richard K Min
+08/24/2015 - 12/09/2015
+ECS 3390 - PROF & TECHNICAL COMMUNICATION
+Status  Units Grading Grade Requirement Designation
+Enrolled
+3.00
+Graded - Undergraduate Courses
+
+Core - 010 Communication (Taken)
+Class Nbr Section Component Days & Times  Room  Instructor  Start/End Date
+81558
+006
+1 LEC
+TuTh 1:00PM - 2:15PM
+JO 4.504
+Melissa M Hernandez-Katz
+08/24/2015 - 12/09/2015
+MUSI 2328 - MUSIC THEORY I
+Status  Units Grading Grade
+Enrolled
+3.00
+Graded - Undergraduate Courses
+
+Class Nbr Section Component Days & Times  Room  Instructor  Start/End Date
+80371
+001
+2 ENS
+TuTh 11:30AM - 12:45PM
+AH1 1.106
+Michael Mcvay
+08/24/2015 - 12/09/2015
+Return to My Class Schedule
+

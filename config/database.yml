@@ -12,9 +12,12 @@ default: &default
 
 development:
   <<: *default
+  database: classtime_development
 
 test:
   <<: *default
+  database: classtime_development
 
 production:
   <<: *default
+  database: classtime_development

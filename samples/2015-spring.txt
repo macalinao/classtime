@@ -1,0 +1,138 @@
+Ian Gilbert Macalinao
+2015 Spring > Undergraduate > University of Texas at Dallas
+CS 1337 - COMPUTER SCIENCE I
+Status  Units Grading Grade
+Enrolled
+3.00
+Graded - Undergraduate Courses
+
+Class Nbr Section Component Days & Times  Room  Instructor  Start/End Date
+22204
+004
+1 LEC
+TuTh 2:30PM - 3:45PM
+ECSS 2.312
+John Cole
+01/12/2015 - 05/02/2015
+CS 2305 - DISCRETE MATH FOR COMPUTING I
+Status  Units Grading Grade
+Enrolled
+3.00
+Graded - Undergraduate Courses
+
+Class Nbr Section Component Days & Times  Room  Instructor  Start/End Date
+22210
+001
+1 LEC
+TuTh 10:00AM - 11:15AM
+FO 2.702
+James Knox Willson
+01/12/2015 - 05/02/2015
+CS 2336 - COMPUTER SCIENCE II
+Status  Units Grading Grade
+Enrolled
+3.00
+Graded - Undergraduate Courses
+
+Class Nbr Section Component Days & Times  Room  Instructor  Start/End Date
+22560
+501
+1 LEC
+MoWe 5:30PM - 6:45PM
+ECSS 2.415
+Mehra Nouroz Borazjany
+01/12/2015 - 05/02/2015
+CS 3340 - COMPUTER ARCHITECTURE
+Status  Units Grading Grade
+Enrolled
+3.00
+Graded - Undergraduate Courses
+
+Class Nbr Section Component Days & Times  Room  Instructor  Start/End Date
+21542
+001
+1 LEC
+TuTh 8:30AM - 9:45AM
+ECSS 2.311
+Nhut Nguyen
+01/12/2015 - 05/02/2015
+MATH 2418 - LINEAR ALGEBRA
+Status  Units Grading Grade
+Enrolled
+4.00
+Graded - Undergraduate Courses
+
+Class Nbr Section Component Days & Times  Room  Instructor  Start/End Date
+25425
+004
+1 LEC
+TuTh 4:00PM - 5:15PM
+GR 2.530
+Qingwen Hu
+01/12/2015 - 05/02/2015
+24956
+301
+2 LBR
+We 9:00AM - 10:50AM
+CB1 1.106
+Qingwen Hu
+01/12/2015 - 05/02/2015
+24959
+701
+Exam
+Mo 7:00PM - 8:15PM
+HH 2.402
+Qingwen Hu
+03/02/2015 - 03/02/2015
+
+
+
+Mo 7:00PM - 8:15PM
+GR 3.420
+Staff
+03/02/2015 - 03/02/2015
+
+
+
+Mo 7:00PM - 8:15PM
+GR 4.428
+Staff
+03/02/2015 - 03/02/2015
+
+
+
+Mo 7:00PM - 8:15PM
+HH 2.402
+Staff
+04/06/2015 - 04/06/2015
+
+
+
+Mo 7:00PM - 8:15PM
+GR 3.420
+Staff
+04/06/2015 - 04/06/2015
+
+
+
+Mo 7:00PM - 8:15PM
+GR 4.428
+Staff
+04/06/2015 - 04/06/2015
+MUSI 1306 - UNDERSTANDING MUSIC
+Status  Units Grading Grade Requirement Designation
+Enrolled
+3.00
+Graded - Undergraduate Courses
+
+Core - 050 Creative Arts (Taken)
+Class Nbr Section Component Days & Times  Room  Instructor  Start/End Date
+26961
+003
+1 LEC
+TuTh 1:00PM - 2:15PM
+AH2 1.204
+Linda Joy Salisbury
+01/12/2015 - 05/02/2015
+Return to My Class Schedule
+
